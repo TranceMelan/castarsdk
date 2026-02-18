@@ -10,7 +10,7 @@ RUN apk add --no-cache wget unzip
 # 3. Move them up one level into /usr/local/bin
 # 4. Clean up
 # ------------------------------------------------------------------
-RUN wget https://download.castarsdk.com/linux.zip -O /tmp/linux.zip && \
+RUN wget https://download.castarsdk.net/linux.zip -O /tmp/linux.zip && \
     unzip /tmp/linux.zip -d /tmp && \
     mv /tmp/linux-sdk/* /usr/local/bin/ && \
     chmod +x /usr/local/bin/CastarSdk_* && \
